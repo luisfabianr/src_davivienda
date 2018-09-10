@@ -1,0 +1,426 @@
+/* ## Typographical Elements
+--------------------------------------------- */
+@font-face {
+    font-family: 'brandon_textregular';
+    src: url('fonts/hvd_fonts_-_brandontext-regular-webfont.eot');
+    src: url('fonts/hvd_fonts_-_brandontext-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/hvd_fonts_-_brandontext-regular-webfont.woff2') format('woff2'),
+         url('fonts/hvd_fonts_-_brandontext-regular-webfont.woff') format('woff');
+   /* font-weight: normal;
+    font-style: normal;
+*/
+}
+@font-face {
+    font-family: 'brandon_grotesquemedium';
+    src: url('fonts/brandon-grotesque-medium-587bd623e472a-webfont.eot');
+    src: url('fonts/brandon-grotesque-medium-587bd623e472a-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/brandon-grotesque-medium-587bd623e472a-webfont.woff2') format('woff2'),
+         url('fonts/brandon-grotesque-medium-587bd623e472a-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'brandon_grotesquebold';
+    src: url('fonts/brandon-grotesque-bold-587bd6400afd0-webfont.eot');
+    src: url('fonts/brandon-grotesque-bold-587bd6400afd0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/brandon-grotesque-bold-587bd6400afd0-webfont.woff2') format('woff2'),
+         url('fonts/brandon-grotesque-bold-587bd6400afd0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'brandon_grotesquethin';
+    src: url('fonts/brandon-grotesque-thin-587bd5b76cfba-webfont.eot');
+    src: url('fonts/brandon-grotesque-thin-587bd5b76cfba-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/brandon-grotesque-thin-587bd5b76cfba-webfont.woff2') format('woff2'),
+         url('fonts/brandon-grotesque-thin-587bd5b76cfba-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'brandon_grotesque_regularRg';
+    src: url('fonts/brandon_reg-webfont.eot');
+    src: url('fonts/brandon_reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/brandon_reg-webfont.woff2') format('woff2'),
+         url('fonts/brandon_reg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'brandon_grotesqueblack';
+    src: url(' fonts/brandon-grotesque-black-58a8a3e824392-webfont.eot');
+    src: url('fonts/brandon-grotesque-black-58a8a3e824392-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/brandon-grotesque-black-58a8a3e824392-webfont.woff2') format('woff2'),
+         url('fonts/brandon-grotesque-black-58a8a3e824392-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'brandon_grotesqueRgIt';
+    src: url('fonts/brandon-grotesque-regular-italic-58a8a456c4724-webfont.eot');
+    src: url('fonts/brandon-grotesque-regular-italic-58a8a456c4724-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/brandon-grotesque-regular-italic-58a8a456c4724-webfont.woff2') format('woff2'),
+         url('fonts/brandon-grotesque-regular-italic-58a8a456c4724-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+	font-family: 'Brandon_Grotesque_Light';
+	src: url('fonts/BrandonGrotesque-Light.eot');
+	src: url('fonts/BrandonGrotesque-Light.eot?#iefix') format('embedded-opentype'),
+		url('fonts/BrandonGrotesque-Light.woff2') format('woff2'),
+		url('fonts/BrandonGrotesque-Light.woff') format('woff'),
+		url('fonts/BrandonGrotesque-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Brandon_Grotesque_Regitalic';
+	src: url('fonts/brandon-grotesque-regular-italic-58a8a456c4724-webfont.eot');
+	src: url('fonts/brandon-grotesque-regular-italic-58a8a456c4724-webfont.eot?#iefix') format('embedded-opentype'),
+		url('fonts/brandon-grotesque-regular-italic-58a8a456c4724-webfont.woff2') format('woff2'),
+		url('fonts/brandon-grotesque-regular-italic-58a8a456c4724-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* ## Colores
+--------------------------------------------- */
+.bg-amarillo-exito{
+	background: #FBBF01;
+}
+.bg-blue-light{
+  background: #F4F7F9;
+}
+.bg-grey-light{
+  background: #EDEDED;
+}
+.bg-magenta-exito{
+  background: #EC008B;
+}
+.bg-grey-terms{
+  background: #F7F6F4;
+}
+/* ## Botones
+--------------------------------------------- */
+.btn.btn-corona-exito{  
+    border-radius: 0;
+    font-family: 'brandon_grotesqueRgIt';
+    color: white;
+    letter-spacing: 1px;
+    padding-right: 40px;
+    font-size: 17px;
+    position: relative;
+    border: 0;
+    display: inline-block;
+    margin-top: 10px;
+    transition: all 0.3s ease-out
+}
+
+.btn.btn-corona-exito::before{
+    content: '';
+    width: 20px;
+    height: 15px;
+    background: url(../../assets/img/arrow-btn.svg);
+    top: 12px;
+    background-repeat: no-repeat;
+    right: 15px;
+    position: absolute;
+}
+.btn.btn-corona-exito.bluecolor-exito{
+    background-color: #172F4E;
+    transition: all 0.3s ease-out;
+}
+.btn.btn-corona-exito.bluecolor-exito:hover{
+    background: #005EB8;
+}
+
+.btn.btn-corona-exito:hover::before{
+    right: 10px;
+}
+
+
+/* ## Animation
+--------------------------------------------- */
+.add-animation {
+     transform: translate3D(0px, 150px, 0px);
+     -webkit-transform: translate3D(0px, 150px, 0px);
+     opacity: 0;
+}
+ .add-animation.animation-1 {
+     -webkit-transition: all 0.3s ease-out 0.15s;
+     -moz-transition: all 0.3s ease-out 0.15s;
+     -o-transition: all 0.3s ease-out 0.15s;
+     -ms-transition: all 0.3s ease-out 0.15s;
+     transition: all 0.3s ease-out 0.15s;
+}
+ .add-animation.animation-2 {
+     -webkit-transition: all 0.3s ease-out 0.3s;
+     -moz-transition: all 0.3s ease-out 0.3s;
+     -o-transition: all 0.3s ease-out 0.3s;
+     -ms-transition: all 0.3s ease-out 0.3s;
+     transition: all 0.3s ease-out 0.3s;
+}
+ .add-animation.animation-3 {
+     -webkit-transition: all 0.3s ease-out 0.45s;
+     -moz-transition: all 0.3s ease-out 0.45s;
+     -o-transition: all 0.3s ease-out 0.45s;
+     -ms-transition: all 0.3s ease-out 0.45s;
+     transition: all 0.3s ease-out 0.45s;
+}
+ .add-animation.animation-4 {
+     -webkit-transition: all 0.3s ease-out 0.6s;
+     -moz-transition: all 0.3s ease-out 0.6s;
+     -o-transition: all 0.3s ease-out 0.6s;
+     -ms-transition: all 0.3s ease-out 0.6s;
+     transition: all 0.3s ease-out 0.6s;
+}
+ .add-animation.animate {
+     transform: translate3D(0px, 0px, 0px);
+     -webkit-transform: translate3D(0px, 0px, 0px);
+     opacity: 1;
+}
+ .add-animation.animate.open {
+     transform: none;
+     transition: none;
+}
+
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+}
+
+@keyframes wobble {
+  0% {transform: translateX(0%);}
+  15% {transform: translateX(-25%) rotate(-5deg);}
+  30% {transform: translateX(20%) rotate(3deg);}
+  45% {transform: translateX(-15%) rotate(-3deg);}
+  60% {transform: translateX(10%) rotate(2deg);}
+  75% {transform: translateX(-5%) rotate(-1deg);}
+  100% {transform: translateX(0%);}
+}
+.wobble {
+  animation-name: wobble;
+}
+@keyframes pulse {
+  0% {transform: scale(1);}
+  50% {transform: scale(1.1);}
+  100% {transform: scale(1);}
+}
+.pulse {
+  animation-name: pulse;
+  animation-duration: 1s;
+}
+
+
+/* ## Custom
+--------------------------------------------- */
+.header-lng-exito{
+  padding: 1rem 0;
+  position: relative;
+}
+.header-lng-exito::after{
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  background: #FBBF01;
+  bottom:-15px;
+  left: 0;
+  z-index: 1;
+  margin-left: 8.333333%;
+}
+.title-lng-exito{
+  font-family: 'brandon_textregular';
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #172F4E;
+  line-height: 1;
+}
+.title-lng-exito span{
+  font-family: 'brandon_grotesquebold';
+}
+.info-promo-lng-exito{
+  padding: 3rem 0;
+}
+.info-promo-lng-exito>div{
+  font-family: 'brandon_textregular';
+  font-size: 30px;
+  line-height: 1.1;
+}
+.info-promo-lng-exito>div span{
+  color:#EC008B;
+  font-family: 'brandon_grotesquebold';
+}
+.premios-lng-exito{
+  padding: 3rem 0 1.5rem;
+  position: relative;
+}
+.premios-lng-exito .col-lg-3.offset-lg-1{
+  margin-left: 11.333333%;
+}
+.img-card-lng-exito{
+  background: #EDEDED;
+  padding: 1.5rem 2rem 1.5rem 3rem;
+}
+.num-lng-exito{
+  color: white;
+  font-family: 'brandon_grotesqueblack';
+  font-size: 55px;
+  padding: 1.5rem 1.2rem;
+  display: inline-block;
+  line-height: 1;
+  position: absolute;
+  top: 10%;
+}
+.card-lng-exito p{
+  font-family: 'brandon_textregular';
+  color: #50504F;
+  font-size: 21px;
+  line-height: 1.1;
+  padding-top: 1rem;
+}
+.card-lng-exito p span{
+  font-family: 'brandon_grotesquebold';
+}
+.icon-mail-lng-exito .img-mail-lng-exito{
+  background: #FBBF01;
+  padding: 1rem;
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+}
+.icon-mail-lng-exito::before{
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background:#50504F; 
+  left: 0;
+  top: 50%;
+  z-index: 0;
+}
+.email-lng-exito{
+  font-family: 'brandon_textregular';
+  color: #50504F;
+  font-size: 18px;
+}
+.email-lng-exito a{
+  font-family: 'brandon_grotesquebold';
+  color: #50504F;
+  text-decoration: underline;
+  transition: all 0.3s ease-out;
+}
+.email-lng-exito a:hover{
+  color: #222222;
+}
+.condiciones-lng-exito{
+  padding: 3rem 0;
+  color: #50504F;
+}
+.condiciones-lng-exito ul li{
+  font-family: 'brandon_textregular';
+  color: #50504F;
+  font-size: 16px;
+  list-style: none;
+  margin-bottom: 1rem;
+  margin-left: 15px;
+  position: relative;
+
+}
+.condiciones-lng-exito ul li::before{
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  top: 5px;
+  left: -30px;
+  background: #FBBF01;
+}
+.title-condiciones-lng-exito{
+  font-family: 'brandon_textregular';
+  color: #50504F;
+  font-size: 30px;
+  margin-bottom: 1rem;
+  padding-left: 4rem;
+  position: relative;
+  line-height: 1;
+}
+.title-condiciones-lng-exito::before{
+  content: '';
+  position: absolute;
+  width: 33px;
+  height: 34px;
+  background: url(../img/icon-check.svg) no-repeat;
+  z-index: 1;
+  margin-left: -3rem;
+}
+.title-condiciones-lng-exito span{
+  font-family: 'brandon_grotesquebold';
+}
+/* BREAK POINTS  ============================= */
+
+@media (max-width: 991.98px) {
+  .ldn-clubprofesional-exito{
+    overflow: hidden;
+  }
+
+  .flex--first{
+    margin-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem; 
+    text-align: center;
+  }
+ .logo-lng-exito{
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  .title-lng-exito{
+    text-align: center;
+    font-size: 40px;
+    padding-left: 2rem;
+    padding-right: 2rem; 
+  }
+  .btn-lng-exito{
+    text-align: center;
+  }
+  .header-lng-exito::after{
+    background: transparent;
+  }
+  .info-promo-lng-exito>div{
+    text-align: center;
+  }
+  .premios-lng-exito .col-lg-3.offset-lg-1 {
+    margin-left:0;
+  }
+  .premios-lng-exito .col-lg-3.offset-lg-1 img{
+    max-width: 100%;
+    height: auto;
+  }
+  .premios-lng-exito{
+    padding-right: 2em;
+    padding-left: 2rem;
+  }
+  .condiciones-lng-exito{
+    padding-right: 2em;
+    padding-left: 2rem;
+  }
+  .condiciones-lng-exito ul li{
+        margin-left: 11px;
+  }
+  body .add-animation {
+    transform: initial;
+     -webkit-transform: initial;
+     opacity: 1;
+  }
+  .img-card-lng-exito{
+    text-align: center;
+  }
+}
